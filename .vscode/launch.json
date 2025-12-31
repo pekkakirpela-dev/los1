@@ -19,7 +19,6 @@
       "program": "${workspaceFolder}/dist/index.js",
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
-      "preLaunchTask": "npm: build",
       "skipFiles": ["<node_internals>/**"]
     }
   ]

@@ -29,7 +29,7 @@ After opening the project, follow these steps:
 
 ### 1. Install Dependencies
 
-Open a terminal in VS Code (`Terminal` → `New Terminal` or `` Ctrl+` ``) and run:
+Open a terminal in VS Code (`Terminal` → `New Terminal` or `Ctrl+\`` ) and run:
 
 ```bash
 npm install
@@ -119,8 +119,7 @@ Create a debug configuration:
       "name": "Debug Built App",
       "program": "${workspaceFolder}/dist/index.js",
       "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal",
-      "preLaunchTask": "npm: build"
+      "console": "integratedTerminal"
     }
   ]
 }
@@ -129,11 +128,13 @@ Create a debug configuration:
 5. **Set breakpoints** by clicking to the left of line numbers
 6. **Press** `F5` to start debugging
 
+**Note:** For "Debug Built App" configuration, run `npm run build` first to compile the TypeScript code.
+
 ### Useful VS Code Shortcuts
 
 | Action | Windows/Linux | Mac |
 |--------|---------------|-----|
-| Open terminal | `` Ctrl+` `` | `` Cmd+` `` |
+| Open terminal | `Ctrl+\`` | `Cmd+\`` |
 | Command palette | `Ctrl+Shift+P` | `Cmd+Shift+P` |
 | Quick file open | `Ctrl+P` | `Cmd+P` |
 | Find in files | `Ctrl+Shift+F` | `Cmd+Shift+F` |
