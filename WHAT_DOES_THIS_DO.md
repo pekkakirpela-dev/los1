@@ -103,7 +103,8 @@ A typical transaction includes:
 
 ### 1. Interactive CLI
 ```bash
-npm start
+npm run build  # Build the TypeScript code first
+npm start      # Run the CLI
 ```
 Prompts for all required information interactively.
 
